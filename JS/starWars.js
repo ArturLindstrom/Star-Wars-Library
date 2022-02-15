@@ -14,15 +14,6 @@ function main(){
 main();
 function animation(){
     let path = anime.path(".path path");
-    anime({   
-        targets: ".x-wing",
-        translateX: path("x"),
-        translateY: path("y"),
-        easing: "linear",
-        duration: 12000,
-        rotate: path("angle"),
-        loop: true
-    });
     anime({
         targets: ".star-wars path",
         strokeDashoffset: [anime.setDashoffset,0], 
